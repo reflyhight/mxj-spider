@@ -12,7 +12,6 @@ import java.util.List;
  */
 public interface AbstractConfig {
 
-	
 	public Object get(String key);
 
 	public Short getShort(String key);
@@ -24,6 +23,8 @@ public interface AbstractConfig {
 	public Double getDouble(String key);
 
 	public String getString(String key);
+
+	public Character getChar(String key);
 
 	public Boolean getBoolen(String key);
 
@@ -40,6 +41,8 @@ public interface AbstractConfig {
 	public Double getDouble(ConfigDefine def);
 
 	public String getString(ConfigDefine def);
+
+	public Character getChar(ConfigDefine def);
 
 	public Boolean getBoolen(ConfigDefine def);
 
