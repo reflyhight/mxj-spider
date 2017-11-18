@@ -4,6 +4,13 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * 测试配置文件装配
+ * @author Rob Jiang
+ * @dat 2017年11月18日
+ * @email jh624haima@126.com
+ * @blog blog.mxjhaima.com
+ */
 public class Test {
 	
 	public static void main(String[] args) {
