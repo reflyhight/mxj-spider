@@ -41,7 +41,7 @@
 			<groupId>us.codecraft</groupId>
 			<artifactId>webmagic-selenium</artifactId>
 			<version>0.7.3</version>
-		</dependency>
+		</dependency> 
 
 		<!-- https://mvnrepository.com/artifact/org.webjars.npm/phantomjs -->
 		<!-- <dependency>
