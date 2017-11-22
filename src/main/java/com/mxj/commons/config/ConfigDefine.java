@@ -3,9 +3,6 @@ package com.mxj.commons.config;
 public enum ConfigDefine {
 	 /*BOOLEAN, STRING, INT, SHORT, LONG, DOUBLE, LIST, CLASS,CHAR*/
 	
-//	LUCENE_INDEX_DIR("lucene.index.dir","index",ConfigType.STRING),
-//	REDIS_CLUSTER_HOSTS("redis.cluster.hosts","hado88,hado89",ConfigType.LIST),
-	
 	BOOLEN_TEST("boolen.test",true,ConfigType.BOOLEAN),
 	
 	STRING_TEST("string.test","rob jiang",ConfigType.STRING),
