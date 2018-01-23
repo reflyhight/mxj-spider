@@ -1,4 +1,4 @@
-package cn.entgroup.utils;
+package com.mxj.utils;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
