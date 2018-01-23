@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>us.codecraft.webmagic.processor.PageProcessor</OriginalElement>
+  <nodes>
+    <node x="1288.5" y="563.0">us.codecraft.webmagic.processor.example.ZhihuPageProcessor</node>
+    <node x="44.0" y="-268.0">com.mxj.test.PhantomJsSpider</node>
+    <node x="1297.0" y="-247.0">us.codecraft.webmagic.processor.example.GithubRepoPageProcessor</node>
+    <node x="397.0" y="574.0">com.mxj.test.OschinaBlogPageProcesser</node>
+    <node x="574.0" y="0.0">us.codecraft.webmagic.processor.PageProcessor</node>
+    <node x="906.5" y="-517.0">us.codecraft.webmagic.processor.SimplePageProcessor</node>
+    <node x="-155.0" y="351.0">us.codecraft.webmagic.processor.example.BaiduBaikePageProcessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="us.codecraft.webmagic.processor.example.BaiduBaikePageProcessor" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="188.0" y="0.0" />
+      <point x="-294.0" y="0.0" />
+    </edge>
+    <edge source="com.mxj.test.OschinaBlogPageProcesser" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="0.0" y="39.0" />
+      <point x="0.0" y="-39.0" />
+    </edge>
+    <edge source="us.codecraft.webmagic.processor.example.GithubRepoPageProcessor" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="188.0" y="-20.0" />
+      <point x="1360.0" y="100.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="com.mxj.test.PhantomJsSpider" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="0.0" y="-39.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="us.codecraft.webmagic.processor.example.ZhihuPageProcessor" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="0.0" y="-39.0" />
+      <point x="1400.0" y="140.0" />
+      <point x="188.0" y="20.0" />
+    </edge>
+    <edge source="us.codecraft.webmagic.processor.SimplePageProcessor" target="us.codecraft.webmagic.processor.PageProcessor">
+      <point x="-188.0" y="0.0" />
+      <point x="253.5" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="1307.5" y="340.5" />
+  <SelectedNodes>
+    <node>us.codecraft.webmagic.processor.PageProcessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

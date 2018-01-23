@@ -3,14 +3,15 @@ package com.mxj.test;
 import java.util.List;
 
 import us.codecraft.webmagic.Page;
+import us.codecraft.webmagic.Request;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.pipeline.ConsolePipeline;
 import us.codecraft.webmagic.processor.PageProcessor;
 
 public class OschinaBlogPageProcesser implements PageProcessor {
-
     private Site site = Site.me().setDomain("my.oschina.net");
+
 
     @Override
     public void process(Page page) {
@@ -19,7 +20,9 @@ public class OschinaBlogPageProcesser implements PageProcessor {
         page.putField("title", page.getHtml().xpath("//div[@class='BlogEntity']/div[@class='BlogTitle']/h1").toString());
         page.putField("content", page.getHtml().$("div.content").toString());
         page.putField("tags",page.getHtml().xpath("//div[@class='BlogTags']/a/text()").all());
+        page.addTargetRequest(new Request("www.baidu.com"));
     }
+
 
     @Override
     public Site getSite() {
@@ -27,8 +30,18 @@ public class OschinaBlogPageProcesser implements PageProcessor {
 
     }
 
+
+
+
     public static void main(String[] args) {
-        Spider.create(new OschinaBlogPageProcesser()).addUrl("http://my.oschina.net/flashsword/blog")
-             .addPipeline(new ConsolePipeline()).run();
+        Spider spider = Spider.create(new OschinaBlogPageProcesser());
+        
+        spider.addUrl("http://my.oschina.net/flashsword/blog");
+//        spider.startRequest(Arrays.asList(new Request("http://my.oschina.net/flashsword/blog")));
+        
+        spider.thread(5);
+        spider.addPipeline(new ConsolePipeline()).run();
+
+
     }
 }

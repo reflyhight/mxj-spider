@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.SystemClock;
 
 public class JunitTest {
 
@@ -16,6 +17,8 @@ public class JunitTest {
 		WebElement webElement = webDriver.findElement(By.xpath("/html"));
 		System.out.println(webElement.getAttribute("class"));
 		webDriver.close();
+
+
 	}
 
 	@Test
