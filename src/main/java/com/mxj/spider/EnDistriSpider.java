@@ -87,7 +87,7 @@ public class EnDistriSpider extends Spider {
 	}
 
 	@Override // 重写设置uuid的方法，进制用户设置，采用自动生成的方式
-	public Spider setUuid(String uuid) {
+	public Spider setUUID(String uuid) {
 		// TODO Auto-generated method stub
 		this.uuid = null;
 		return this;

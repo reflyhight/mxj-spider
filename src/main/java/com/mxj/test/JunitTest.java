@@ -1,35 +1,30 @@
 package com.mxj.test;
 
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.SystemClock;
 
 public class JunitTest {
 
 	public static void main(String[] args) {
-		System.getProperties().setProperty("webdriver.chrome.driver",
-				"D:\\Program Files\\python2.7\\Scripts\\phantomjs.exe");
-		WebDriver webDriver = new ChromeDriver();
-		webDriver.get("http://huaban.com/");
-		WebElement webElement = webDriver.findElement(By.xpath("/html"));
-		System.out.println(webElement.getAttribute("class"));
-		webDriver.close();
+//		System.getProperties().setProperty("webdriver.chrome.driver",
+//				"D:\\Program Files\\python2.7\\Scripts\\phantomjs.exe");
+//		WebDriver webDriver = new ChromeDriver();
+//		webDriver.get("http://huaban.com/");
+//		WebElement webElement = webDriver.findElement(By.xpath("/html"));
+//		System.out.println(webElement.getAttribute("class"));
+//		webDriver.close();
 
 
 	}
 
 	@Test
 	public void testSelenium() {
-		System.getProperties().setProperty("webdriver.chrome.driver",
-				"C:\\Users\\haima\\Downloads\\chromedriver_win32\\chromedriver.exe");
-		WebDriver webDriver = new ChromeDriver();
-		webDriver.get("http://huaban.com/");
-		WebElement webElement = webDriver.findElement(By.xpath("/html"));
-		System.out.println(webElement.getAttribute("class"));
-		webDriver.close();
+//		System.getProperties().setProperty("webdriver.chrome.driver",
+//				"C:\\Users\\haima\\Downloads\\chromedriver_win32\\chromedriver.exe");
+//		WebDriver webDriver = new ChromeDriver();
+//		webDriver.get("http://huaban.com/");
+//		WebElement webElement = webDriver.findElement(By.xpath("/html"));
+//		System.out.println(webElement.getAttribute("class"));
+//		webDriver.close();
 
 		// Object obj= null;
 		// String str=(String)obj;
